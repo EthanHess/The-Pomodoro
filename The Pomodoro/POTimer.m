@@ -76,6 +76,21 @@
     
     self.isOn = NO;
     
+    UILocalNotification *timerRoundDoneNotification = [UILocalNotification new];
+    
+    timerRoundDoneNotification.fireDate = [NSDate date];
+    timerRoundDoneNotification.timeZone = [NSTimeZone defaultTimeZone];
+    timerRoundDoneNotification.soundName = @"bell_tree.mp3";
+    timerRoundDoneNotification.alertBody = @" Time's up! ";
+    timerRoundDoneNotification.applicationIconBadgeNumber = -1;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:timerRoundDoneNotification];
+    
+    
+    
+    
+    
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:timerEnded object:nil];
     
 }
