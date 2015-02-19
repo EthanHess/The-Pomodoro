@@ -11,6 +11,8 @@
 		2719D46F1A92996900E244CF /* POTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2719D46D1A92996900E244CF /* POTimerViewController.xib */; };
 		2719D4721A92999800E244CF /* PORoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2719D4711A92999800E244CF /* PORoundsViewController.m */; };
 		2719D4751A929E3900E244CF /* POTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2719D4741A929E3900E244CF /* POTimer.m */; };
+		2719D4861A94009D00E244CF /* POAppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2719D4851A94009D00E244CF /* POAppearanceController.m */; };
+		27EA05571A955F110011B268 /* Picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27EA05561A955F110011B268 /* Picture.jpg */; };
 		7141B2E6193DBDFD0084F9F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7141B2E5193DBDFD0084F9F1 /* Foundation.framework */; };
 		7141B2E8193DBDFD0084F9F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7141B2E7193DBDFD0084F9F1 /* CoreGraphics.framework */; };
 		7141B2EA193DBDFD0084F9F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7141B2E9193DBDFD0084F9F1 /* UIKit.framework */; };
@@ -43,6 +45,9 @@
 		2719D4711A92999800E244CF /* PORoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PORoundsViewController.m; sourceTree = "<group>"; };
 		2719D4731A929E3900E244CF /* POTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POTimer.h; sourceTree = "<group>"; };
 		2719D4741A929E3900E244CF /* POTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POTimer.m; sourceTree = "<group>"; };
+		2719D4841A94009D00E244CF /* POAppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POAppearanceController.h; sourceTree = "<group>"; };
+		2719D4851A94009D00E244CF /* POAppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POAppearanceController.m; sourceTree = "<group>"; };
+		27EA05561A955F110011B268 /* Picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Picture.jpg; sourceTree = "<group>"; };
 		7141B2E2193DBDFD0084F9F1 /* The Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Pomodoro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7141B2E5193DBDFD0084F9F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7141B2E7193DBDFD0084F9F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +125,8 @@
 			children = (
 				7141B2F4193DBDFD0084F9F1 /* POAppDelegate.h */,
 				7141B2F5193DBDFD0084F9F1 /* POAppDelegate.m */,
+				2719D4841A94009D00E244CF /* POAppearanceController.h */,
+				2719D4851A94009D00E244CF /* POAppearanceController.m */,
 				2719D46B1A92996900E244CF /* POTimerViewController.h */,
 				2719D46C1A92996900E244CF /* POTimerViewController.m */,
 				2719D46D1A92996900E244CF /* POTimerViewController.xib */,
@@ -136,6 +143,7 @@
 		7141B2EC193DBDFD0084F9F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27EA05561A955F110011B268 /* Picture.jpg */,
 				7141B2ED193DBDFD0084F9F1 /* The Pomodoro-Info.plist */,
 				7141B2EE193DBDFD0084F9F1 /* InfoPlist.strings */,
 				7141B2F1193DBDFD0084F9F1 /* main.m */,
@@ -240,6 +248,7 @@
 			files = (
 				2719D46F1A92996900E244CF /* POTimerViewController.xib in Resources */,
 				7141B2F0193DBDFD0084F9F1 /* InfoPlist.strings in Resources */,
+				27EA05571A955F110011B268 /* Picture.jpg in Resources */,
 				7141B2F8193DBDFD0084F9F1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2719D4861A94009D00E244CF /* POAppearanceController.m in Sources */,
 				2719D4721A92999800E244CF /* PORoundsViewController.m in Sources */,
 				2719D46E1A92996900E244CF /* POTimerViewController.m in Sources */,
 				2719D4751A929E3900E244CF /* POTimer.m in Sources */,

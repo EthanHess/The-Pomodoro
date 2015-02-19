@@ -10,15 +10,21 @@
 
 static NSString * const currentRoundNotification = @"currentRoundNotification";
 static NSString * const secondTickNotification = @"secondTickNotification";
+static NSString * const selectedRound = @"selectedRoundNotification";
+static NSString * const timerEnded = @"timerEnded";
+static NSString * const timerStarted = @"timerStarted";
+static NSString * const appStarted = @"appStarted"; 
 
 @interface POTimer : NSObject
 
 @property (nonatomic, assign) NSInteger minutes;
 @property (nonatomic, assign) NSInteger seconds;
 
+
 +(POTimer *)sharedInstance;
 
 -(IBAction)startTimer:(id)sender;
--(void)cancelTimer;
+-(IBAction)cancelTimer:(id)sender;
+-(IBAction)pauseTimer:(id)sender;
 
 @end

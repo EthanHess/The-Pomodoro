@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface POTimerViewController : UIViewController
 
--(id)init;
 
 @end

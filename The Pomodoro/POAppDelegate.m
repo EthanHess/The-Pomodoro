@@ -9,6 +9,7 @@
 #import "POAppDelegate.h"
 #import "POTimerViewController.h"
 #import "PORoundsViewController.h"
+#import "POAppearanceController.h"
 
 @implementation POAppDelegate
 
@@ -28,12 +29,19 @@
     roundsViewController.tabBarItem.title = @"Rounds";
     roundsViewController.tabBarItem.image = [UIImage imageNamed:@"Rounds"];
 
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:roundsViewController];
-
+    //UINavigationController *POPNav = [[UINavigationController alloc]initWithRootViewController:timeViewController];
+    
+    [POAppearanceController setUpDefaultAppearance];
+    
+    UINavigationController *navControllerForRoundsViewController = [[UINavigationController alloc]initWithRootViewController:roundsViewController];
+    
+    
     UITabBarController *tabBarController = [UITabBarController new];
-    tabBarController.viewControllers = @[timeViewController,navController];
+    tabBarController.viewControllers = @[timeViewController,navControllerForRoundsViewController];
+
+
         
-    self.window.rootViewController = tabBarController;
+   self.window.rootViewController = tabBarController;
     
     return YES;
                                             
